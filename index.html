@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revou Test</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <script src="/js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 id="header-luas">Luas Segitiga</h1>
+    <h1 id="header-keliling" class="hidden">Keliling Segitiga</h1>
+  </header>
+  <body>
+    <!-- rumus luas -->
+    <section class="rumus" id="rumus-luas">
+      <div id="img-segitiga">
+        <img src="/asset/segitiga.jpg" alt="segitiga">
+      </div>
+      <div>
+        <h2>Rumus Luas Segitiga</h2>
+        <p>L = 1/2 x a x t</p>
+        <h3>Keterangan :</h3>
+        <p>L = Luas</p>
+        <p>a = Alas</p>
+        <p>t = Tinggi</p>
+      </div>
+    </section>
+    <!-- hitung luas -->
+    <section class="hitung" id="hitung-luas">
+      <form action="#">
+        <h2>Hitung Luas Segitiga</h2>
+        <input type="number" id="alas" name="alas" required placeholder="Alas Segitiga">
+        <input type="number" id="tinggi" name="tinggi" required placeholder="Tinggi Segitiga">
+        <div id="result-luas-container">
+          
+        </div>
+        <div id="btn-container">
+          <button type="button" class="btn-switch">Hitung Keliling</button>
+          <button type="submit" class="btn-result" id="result-luas">Hitung!</button>
+          <button type="reset" class="btn-reset">Reset</button>
+        </div>
+      </form>
+    </section>
+    <!-- rumus keliling -->
+    <section class="rumus hidden" id="rumus-keliling">
+      <div id="img-segitiga">
+        <img src="/asset/segitiga.jpg" alt="segitiga">
+      </div>
+      <div>
+        <h2>Rumus Keliling Segitiga</h2>
+        <p>K = S1 + S2 + S3</p>
+        <h3>Keterangan :</h3>
+        <p>S1 = Sisi A</p>
+        <p>S2 = Sisi B</p>
+        <p>S3 = Sisi C</p>
+      </div>
+    </section>
+    <!-- hitung keliling -->
+    <section class="hitung hidden" id="hitung-keliling">
+      <form action="#">
+        <h2>Hitung Keliling Segitiga</h2>
+        <input type="number" id="sisi-a" name="sisi-a" required placeholder="Nilai Sisi A">
+        <input type="number" id="sisi-b" name="sisi-b" required placeholder="Nilai Sisi B">
+        <input type="number" id="sisi-c" name="sisi-c" required placeholder="Nilai Sisi C">
+        <div id="result-keliling-container">
+          
+        </div>
+        <div id="btn-container">
+          <button type="button" class="btn-switch">Hitung Luas</button>
+          <button type="submit" class="btn-result" id="result-keliling">Hitung!</button>
+          <button type="reset" class="btn-reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </body>
+</body>
+</html>
